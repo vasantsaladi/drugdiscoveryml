@@ -93,3 +93,29 @@ li {
 .overview-text ul li:before {
   content: "• ";
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  margin-top: 20px;
+  color: white;
+}
+
+ul {
+  list-style-position: inside;
+  color: white;
+}
