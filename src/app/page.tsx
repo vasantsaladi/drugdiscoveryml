@@ -14,15 +14,32 @@ const Home = () => {
         </video>
       </div>
       <div className={styles.content}>
-        <div className={styles.backgroundBar}>
+        {/* <div className={styles.backgroundBar}>
           <div className={styles.left}>
             <h1>
               <a href="/">RAG QnA Chatbot</a>
             </h1>
           </div>
           <NavBar />
-        </div>
+        </div> */}
+        {/* <NavBar /> */}
         <div className="overview-text">
+          <div
+            className="flex justify-center items-center"
+            style={{ marginTop: "40vh" }}
+          >
+            <button
+              className="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded"
+              onClick={() => (window.location.href = "/ask")}
+              style={{ marginTop: "-20vh" }}
+            >
+              Try us out!
+            </button>
+          </div>
+          {/* <div
+            className="flex justify-center items-center h-screen"
+            style={{ marginTop: "30vh" }}
+          ></div> */}
           {/* <ul style={{ textAlign: "left", marginTop: "10px" }}>
             <li>Navigate to the &ldquo;Train&rdquo; tab above.</li>
           </ul> */}
