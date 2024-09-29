@@ -8,7 +8,12 @@ const Home = () => {
   return (
     <div>
       <div className={styles.videoBackground}>
-        <video autoPlay muted loop>
+        <video
+          autoPlay
+          muted
+          loop
+          style={{ height: "66.67vh", objectFit: "cover", width: "50%" }}
+        >
           <source src="/video1.mp4" type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
@@ -28,13 +33,32 @@ const Home = () => {
             className="flex justify-center items-center"
             style={{ marginTop: "40vh" }}
           >
-            <button
-              className="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded"
-              onClick={() => (window.location.href = "/ask")}
-              style={{ marginTop: "-20vh" }}
-            >
-              Try us out!
-            </button>
+            <div className="relative flex items-center">
+              <input
+                type="text"
+                placeholder="Ask me anything..."
+                className="bg-white bg-opacity-20 backdrop-blur-md text-blue-600 placeholder-gray-600 border border-white border-opacity-30 rounded-full py-3 px-6 w-80 focus:outline-none focus:ring-2 focus:ring-blue-400 font-sf-pro"
+              />
+              <button
+                className="absolute right-2 bg-blue-600 hover:bg-blue-700 text-white font-bold p-2 rounded-full transition duration-300 ease-in-out"
+                onClick={() => (window.location.href = "/ask")}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 10l7-7m0 0l7 7m-7-7v18"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
           {/* <div
             className="flex justify-center items-center h-screen"
