@@ -19,15 +19,6 @@ const Home = () => {
         </video>
       </div>
       <div className={styles.content}>
-        {/* <div className={styles.backgroundBar}>
-          <div className={styles.left}>
-            <h1>
-              <a href="/">RAG QnA Chatbot</a>
-            </h1>
-          </div>
-          <NavBar />
-        </div> */}
-        {/* <NavBar /> */}
         <div className="overview-text">
           <div
             className="flex justify-center items-center"
@@ -36,7 +27,7 @@ const Home = () => {
             <div className="relative flex items-center">
               <input
                 type="text"
-                placeholder="Ask me anything..."
+                placeholder="Enter a disease we can cure..."
                 className="bg-white bg-opacity-20 backdrop-blur-md text-blue-600 placeholder-gray-600 border border-white border-opacity-30 rounded-full py-3 px-6 w-80 focus:outline-none focus:ring-2 focus:ring-blue-400 font-sf-pro"
               />
               <button
